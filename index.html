@@ -1,0 +1,27 @@
+<html>
+  <head>		
+		<meta name="author" content="Bekir Özgünlü"/>
+       	<link rel="shortcut icon" type = "icon" href="favicon.ico"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Tweet Search</title>
+		<link rel="stylesheet" type="text/css" href="twitterstyle.css" />
+		<script type="text/javascript" src = "twitter.js"></script>		
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>			
+	</head>
+	<body>		
+		<table>			
+			<td class = "edge"></td>
+			<td class = "center">																				
+				<div>			
+					<input id="search_this" type="text" value ="Search..." onfocus="clear_text(this)">
+					<button class = "search_button" onclick="search_tweet();" href="javascript:void(0);">Search</button>		
+				</div>									
+				<div>
+					<table id = "tweet_table">											
+					</table>				
+				</div>									
+			</td>
+			<td class = "edge" id = "twitter"></td>					
+		</table>
+	</body>
+</html>
